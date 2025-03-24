@@ -1,0 +1,63 @@
+Football Data Analysis Report (EPL Data)
+Introduction
+This report analyzes English Premier League (EPL) football data containing match results and statistics. The original data includes:
+
+Division (Div)
+Match date (Date)
+Teams (HomeTeam, AwayTeam)
+Full-time and half-time scores (FTHG, FTAG, HTHG, HTAG)
+Full-time and half-time results (FTR, HTR)
+Season information
+The data has been transformed into a league table format showing:
+
+Rank
+Team name
+Matches played (MP)
+Wins (W)
+Losses (L)
+Draws (D)
+Goals for (GF)
+Goals against (GA)
+Goal difference (GD)
+Points (PTS)
+Analysis Approach
+Data Transformation Process
+Match Results Processing:
+
+Calculated points for each match (3 for win, 1 for draw, 0 for loss)
+Aggregated results by team for each season
+Computed goal statistics (GF, GA, GD)
+League Table Creation:
+
+Sorted teams by points (descending)
+For ties, used goal difference as secondary sort
+Further ties resolved by goals scored
+Key Metrics Calculated
+Win Percentage: (W/MP)*100
+Loss Percentage: (L/MP)*100
+Points Per Game: PTS/MP
+Goal Conversion: GF/Shots (if shot data available)
+Sample Findings
+Top Performing Teams
+Manchester City (Sample Season)
+
+MP: 38
+W: 32
+D: 4
+L: 2
+PTS: 100
+GD: +79
+Liverpool (Sample Season)
+
+MP: 38
+W: 30
+D: 7
+L: 1
+PTS: 97
+GD: +68
+Defensive Performance
+Best defense: Team with lowest GA
+Worst defense: Team with highest GA
+Offensive Performance
+Best attack: Team with highest GF
+Least effective attack: Team with lowest GF
